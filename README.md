@@ -1,6 +1,6 @@
 # README.md
 
-    
+    TypeScript type definitions for stable-diffusion-webui JavaScript scripts
 
 ## install
 

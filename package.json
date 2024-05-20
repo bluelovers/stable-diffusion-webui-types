@@ -1,6 +1,6 @@
 {
   "name": "stable-diffusion-webui-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript type definitions for stable-diffusion-webui JavaScript scripts",
   "keywords": [
     "stable-diffusion-webui",
@@ -19,12 +19,20 @@
     "extensions",
     "create-by-yarn-tool"
   ],
+  "homepage": "https://github.com/bluelovers/stable-diffusion-webui-types#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/stable-diffusion-webui-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/stable-diffusion-webui-types.git"
+  },
   "license": "ISC",
   "author": "bluelovers",
   "sideEffects": false,
+  "main": "global.webui.d.ts",
   "types": "global.webui.d.ts",
   "typings": "global.webui.d.ts",
-  "main": "global.webui.d.ts",
   "scripts": {
     "review": "yarn run review:coverage",
     "review:coverage": "yarn run lint && yarn run coverage",
