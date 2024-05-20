@@ -1,6 +1,6 @@
 {
   "name": "stable-diffusion-webui-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TypeScript type definitions for stable-diffusion-webui JavaScript scripts",
   "keywords": [
     "stable-diffusion-webui",
