@@ -1,4 +1,5 @@
 /// <reference lib="dom" preserve="true" />
+
 interface GradioAppHTMLElement extends Omit<Element, keyof HTMLElement>, HTMLElement, Partial<Pick<Document, 'getElementById'>>
 {
 }
@@ -46,6 +47,12 @@ declare function onAfterUiUpdate(callback: Function): void;
 declare function onUiLoaded(callback: Function): void;
 
 /**
+ * Register callback to be called when the UI is loaded and opts is ready.
+ * The callback receives no arguments.
+ */
+declare function onUiLoadedReady(callback: Function): void;
+
+/**
  * Register callback to be called when the UI tab is changed.
  * The callback receives no arguments.
  */
@@ -76,3 +83,21 @@ declare var executedOnLoaded: boolean;
 declare function uiElementIsVisible(el: GradioAppHTMLElement | Document): boolean;
 
 declare function uiElementInSight(el: Element): boolean;
+
+/**
+ * init after `onOptionsChanged`
+ */
+declare var opts: Record<string, any>;
+
+/**
+ * title from hints.js
+ */
+declare var titles: Record<string, string>;
+
+interface Window
+{
+	/**
+	 * original translation
+	 */
+	localization: any;
+}
